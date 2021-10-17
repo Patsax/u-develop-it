@@ -1,20 +1,27 @@
 {
-  "name": "utlis",
+  "name": "u-develop-it",
   "version": "1.0.0",
   "description": "",
-  "main": "inputCheck.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patsax/u-develop-it.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mysql2": "^2.3.2"
+  "bugs": {
+    "url": "https://github.com/Patsax/u-develop-it/issues"
   },
+  "homepage": "https://github.com/Patsax/u-develop-it#readme",
   "devDependencies": {
     "jest": "^27.3.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
