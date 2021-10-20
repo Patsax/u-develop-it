@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('../../db/connection');
 const inputCheck = require('../../utils/inputCheck');
 
-// GET all voters
+// GET all voters alphebetized by last name
 router.get('/voters', (req, res) => {
     const sql = `SELECT * FROM voters ORDER BY last_name`;
 
@@ -44,6 +44,7 @@ router.post('/voter', ({ body }, res) => {
         res.status(400).json({ error: errors });
         return;
     }
+    
     const sql = `INSERT INTO voters (first_name, last_name, email) VALUES (?,?,?)`;
     const params = [body.first_name, body.last_name, body.email];
 

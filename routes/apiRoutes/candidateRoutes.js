@@ -95,7 +95,6 @@ router.put('/candidate/:id', (req, res) => {
     db.query(sql, params, (err, result) => {
         if (err) {
             res.status(400).json({ error: err.message });
-            // check if a record was found
         } else if (!result.affectedRows) {
             res.json({
             message: 'Candidate not found'
